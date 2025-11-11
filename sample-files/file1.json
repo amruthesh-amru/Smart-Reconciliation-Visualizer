@@ -1,0 +1,38 @@
+[
+    {
+      "docNo": "INV-1001",
+      "party": "ABC Traders",
+      "date": "2025-02-01",
+      "amount": 1180,
+      "tax": 180
+    },
+    {
+      "docNo": "INV-1002",
+      "party": "Zenith Supplies Pvt Ltd",
+      "date": "2025-02-02",
+      "amount": 2360,
+      "tax": 360
+    },
+    {
+      "docNo": "INV-1003",
+      "party": "Quick Mart",
+      "date": "2025-02-03",
+      "amount": 590,
+      "tax": 90
+    },
+    {
+      "docNo": "INV-1004",
+      "party": "BlueTech Solutions",
+      "date": "2025-02-04",
+      "amount": 1180,
+      "tax": 180
+    },
+    {
+      "docNo": "INV-1005",
+      "party": "Metro Distributors",
+      "date": "2025-02-05",
+      "amount": 945,
+      "tax": 145
+    }
+  ]
+  
