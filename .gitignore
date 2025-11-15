@@ -23,3 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+# TestSprite - Exclude sensitive configuration and generated results
+testsprite_tests/tmp/config.json
+testsprite_tests/tmp/test_results.json
+testsprite_tests/tmp/raw_report.md
+testsprite_tests/testsprite-mcp-test-report.html

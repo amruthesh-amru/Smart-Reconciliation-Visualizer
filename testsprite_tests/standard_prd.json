@@ -1,0 +1,231 @@
+{
+  "projectName": "Smart Reconciliation Visualizer",
+  "version": "1.0",
+  "description": "A web-based application for reconciling financial data from multiple sources with intelligent matching, variance analysis, and automated insights",
+  "objectives": [
+    "Automate reconciliation of financial data between different systems",
+    "Handle variations in data formats and column names",
+    "Identify matches with minor discrepancies (amount differences, date variations, name variations)",
+    "Provide actionable insights on discrepancies",
+    "Export results for further analysis"
+  ],
+  "targetUsers": [
+    "Financial analysts",
+    "Accountants",
+    "Auditors",
+    "Data analysts"
+  ],
+  "features": [
+    {
+      "id": "FEAT-001",
+      "name": "Dual File Upload",
+      "description": "Upload and compare two CSV/JSON files",
+      "acceptanceCriteria": [
+        "Support CSV and JSON file formats",
+        "Maximum file size: 50MB",
+        "Display file name and size after upload",
+        "Show validation errors for invalid files",
+        "Support drag-and-drop and click-to-upload"
+      ]
+    },
+    {
+      "id": "FEAT-002",
+      "name": "Intelligent Column Mapping",
+      "description": "Automatically detect and map columns (docNo, party, date, amount, tax)",
+      "acceptanceCriteria": [
+        "Detect common column name patterns",
+        "Suggest mappings for required fields",
+        "Allow manual adjustment of mappings",
+        "Show preview of mapped data"
+      ]
+    },
+    {
+      "id": "FEAT-003",
+      "name": "Smart Reconciliation",
+      "description": "Match records with configurable tolerances",
+      "acceptanceCriteria": [
+        "Amount tolerance (percentage-based, 0-20%)",
+        "Date tolerance (day-based, 0-30 days)",
+        "Party name fuzzy matching",
+        "Categorize results as matched, partial, or unmatched"
+      ]
+    },
+    {
+      "id": "FEAT-004",
+      "name": "Visual Dashboard",
+      "description": "Summary cards showing match statistics",
+      "acceptanceCriteria": [
+        "Display total records count",
+        "Show matched, partial, and unmatched counts",
+        "Display amount variance",
+        "Show match rate percentage"
+      ]
+    },
+    {
+      "id": "FEAT-005",
+      "name": "Interactive Results Table",
+      "description": "Color-coded rows with filtering and sorting",
+      "acceptanceCriteria": [
+        "Color-coded rows (green/yellow/red)",
+        "Expandable detail views",
+        "Sort and filter capabilities",
+        "Pagination support"
+      ]
+    },
+    {
+      "id": "FEAT-006",
+      "name": "Automated Insights",
+      "description": "AI-powered recommendations for discrepancies",
+      "acceptanceCriteria": [
+        "Identify vendors with high mismatch rates",
+        "Highlight most problematic fields",
+        "Show date patterns in unmatched entries",
+        "Provide variance summaries"
+      ]
+    },
+    {
+      "id": "FEAT-007",
+      "name": "Export Functionality",
+      "description": "Export reconciliation results to CSV",
+      "acceptanceCriteria": [
+        "Export all results to CSV",
+        "Export filtered results to CSV",
+        "Include all relevant columns in export"
+      ]
+    },
+    {
+      "id": "FEAT-008",
+      "name": "Demo Mode",
+      "description": "Pre-loaded sample data for quick testing",
+      "acceptanceCriteria": [
+        "One-click demo data loading",
+        "Sample data includes various match scenarios",
+        "Clear indication when demo mode is active"
+      ]
+    }
+  ],
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Upload Files",
+      "description": "As a user, I want to upload two CSV/JSON files so that I can compare financial data from different sources"
+    },
+    {
+      "id": "US-002",
+      "title": "File Validation",
+      "description": "As a user, I want to see file upload progress and validation errors so that I know if my files are valid"
+    },
+    {
+      "id": "US-003",
+      "title": "Demo Data",
+      "description": "As a user, I want to use demo data so that I can quickly test the application without preparing files"
+    },
+    {
+      "id": "US-004",
+      "title": "Automatic Column Detection",
+      "description": "As a user, I want the system to automatically detect and suggest column mappings so that I don't have to manually map every column"
+    },
+    {
+      "id": "US-005",
+      "title": "Manual Column Mapping",
+      "description": "As a user, I want to manually adjust column mappings so that I can handle non-standard column names"
+    },
+    {
+      "id": "US-006",
+      "title": "Data Preview",
+      "description": "As a user, I want to see a preview of mapped data so that I can verify the mapping is correct"
+    },
+    {
+      "id": "US-007",
+      "title": "Configure Amount Tolerance",
+      "description": "As a user, I want to configure amount tolerance (0-20%) so that I can handle minor amount discrepancies"
+    },
+    {
+      "id": "US-008",
+      "title": "Configure Date Tolerance",
+      "description": "As a user, I want to configure date tolerance (0-30 days) so that I can handle date variations"
+    },
+    {
+      "id": "US-009",
+      "title": "Fuzzy Matching",
+      "description": "As a user, I want the system to use fuzzy matching for party names so that variations in naming don't prevent matches"
+    },
+    {
+      "id": "US-010",
+      "title": "Categorized Results",
+      "description": "As a user, I want to see reconciliation results categorized (matched, partial, unmatched) so that I can focus on discrepancies"
+    },
+    {
+      "id": "US-011",
+      "title": "Summary Statistics",
+      "description": "As a user, I want to see summary statistics (total matched, partial, unmatched) so that I can quickly assess reconciliation quality"
+    },
+    {
+      "id": "US-012",
+      "title": "Color-Coded Results",
+      "description": "As a user, I want to see color-coded results (green/yellow/red) so that I can quickly identify match status"
+    },
+    {
+      "id": "US-013",
+      "title": "Filter Results",
+      "description": "As a user, I want to filter results by match type, party, or amount range so that I can focus on specific issues"
+    },
+    {
+      "id": "US-014",
+      "title": "Search Results",
+      "description": "As a user, I want to search results by document number or party name so that I can find specific records"
+    },
+    {
+      "id": "US-015",
+      "title": "Expand Row Details",
+      "description": "As a user, I want to expand row details so that I can see full comparison information"
+    },
+    {
+      "id": "US-016",
+      "title": "Sort Results",
+      "description": "As a user, I want to sort results by various columns so that I can organize data for analysis"
+    },
+    {
+      "id": "US-017",
+      "title": "Automated Insights",
+      "description": "As a user, I want to see automated insights about discrepancies so that I can identify patterns and root causes"
+    },
+    {
+      "id": "US-018",
+      "title": "Vendor Recommendations",
+      "description": "As a user, I want to see recommendations for vendors with high mismatch rates so that I can prioritize investigations"
+    },
+    {
+      "id": "US-019",
+      "title": "Variance Summaries",
+      "description": "As a user, I want to see variance summaries so that I can understand the nature of discrepancies"
+    },
+    {
+      "id": "US-020",
+      "title": "Export Results",
+      "description": "As a user, I want to export reconciliation results to CSV so that I can perform further analysis in Excel or other tools"
+    },
+    {
+      "id": "US-021",
+      "title": "Export Filtered Results",
+      "description": "As a user, I want to export filtered results so that I can share specific subsets of data"
+    }
+  ],
+  "technicalStack": {
+    "framework": "React 18.3",
+    "buildTool": "Vite 6.0",
+    "styling": "Tailwind CSS 3.4",
+    "stateManagement": "Zustand 5.0",
+    "csvParsing": "PapaParse 5.4",
+    "icons": "React Icons 5.3",
+    "dateUtilities": "date-fns 4.1"
+  },
+  "workflow": [
+    "Step 1: Upload Files - Upload two CSV or JSON files containing financial data",
+    "Step 2: Map Columns - Map file columns to required fields (docNo, party, date, amount, tax)",
+    "Step 3: Configure Settings - Set tolerance levels (Amount Tolerance: 0-20%, Date Tolerance: 0-30 days)",
+    "Step 4: View Results - Results categorized as Matched (Green), Partial (Yellow), Unmatched A/B (Red)",
+    "Step 5: Analyze Insights - Get automated recommendations",
+    "Step 6: Export Results - Download filtered or complete results as CSV"
+  ]
+}

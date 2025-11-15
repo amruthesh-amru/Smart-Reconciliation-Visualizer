@@ -1,0 +1,57 @@
+{
+  "project_name": "Smart Reconciliation Visualizer",
+  "project_type": "frontend",
+  "tech_stack": {
+    "framework": "React 18.3",
+    "build_tool": "Vite 6.0",
+    "styling": "Tailwind CSS 3.4",
+    "state_management": "Zustand 5.0",
+    "csv_parsing": "PapaParse 5.4",
+    "icons": "React Icons 5.3",
+    "date_utilities": "date-fns 4.1"
+  },
+  "features": [
+    "Dual File Upload - Upload and compare two CSV/JSON files",
+    "Intelligent Column Mapping - Automatically detect and map columns (docNo, party, date, amount, tax)",
+    "Smart Reconciliation - Match records with configurable tolerances (amount tolerance percentage-based, date tolerance day-based, party name fuzzy matching)",
+    "Visual Dashboard - Summary cards showing match statistics",
+    "Interactive Results Table - Color-coded rows (green/yellow/red), expandable detail views, sort and filter capabilities, pagination",
+    "Automated Insights - AI-powered recommendations for discrepancies",
+    "Export Functionality - Export reconciliation results to CSV",
+    "Demo Mode - Pre-loaded sample data for quick testing"
+  ],
+  "project_structure": {
+    "components": [
+      "FileUpload.jsx - Dual file upload UI",
+      "ColumnMapper.jsx - Map CSV columns to required fields",
+      "Dashboard.jsx - Summary cards & main view",
+      "ResultsTable.jsx - Filterable table with expandable rows",
+      "InsightsPanel.jsx - Automated recommendations",
+      "SettingsPanel.jsx - Configure tolerances"
+    ],
+    "store": [
+      "reconciliationStore.js - Zustand state management"
+    ],
+    "utils": [
+      "csvParser.js - PapaParse wrapper",
+      "reconciliationEngine.js - Core matching logic",
+      "insights.js - Generate recommendations",
+      "export.js - CSV export functionality"
+    ],
+    "data": [
+      "sampleData.js - Demo mode data"
+    ]
+  },
+  "workflow": [
+    "Step 1: Upload Files - Upload two CSV or JSON files containing financial data",
+    "Step 2: Map Columns - Map file columns to required fields (docNo, party, date, amount, tax)",
+    "Step 3: Configure Settings - Set tolerance levels (Amount Tolerance: 0-20%, Date Tolerance: 0-30 days)",
+    "Step 4: View Results - Results categorized as Matched (Green), Partial (Yellow), Unmatched A/B (Red)",
+    "Step 5: Analyze Insights - Get automated recommendations",
+    "Step 6: Export Results - Download filtered or complete results as CSV"
+  ],
+  "port": 5173,
+  "entry_point": "src/main.jsx",
+  "build_command": "npm run dev"
+}
+

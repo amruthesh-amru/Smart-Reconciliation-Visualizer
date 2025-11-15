@@ -1,0 +1,235 @@
+[
+  {
+    "id": "TC-001",
+    "title": "Navigate to the application",
+    "description": "Verify the application loads correctly at http://localhost:5173",
+    "steps": [
+      "Open browser",
+      "Navigate to http://localhost:5173",
+      "Verify application loads"
+    ]
+  },
+  {
+    "id": "TC-002",
+    "title": "Upload File A (CSV)",
+    "description": "Test uploading a CSV file as File A",
+    "steps": [
+      "Click on File A upload area",
+      "Select a CSV file",
+      "Verify file is uploaded and displayed"
+    ]
+  },
+  {
+    "id": "TC-003",
+    "title": "Upload File B (JSON)",
+    "description": "Test uploading a JSON file as File B",
+    "steps": [
+      "Click on File B upload area",
+      "Select a JSON file",
+      "Verify file is uploaded and displayed"
+    ]
+  },
+  {
+    "id": "TC-004",
+    "title": "Use Demo Data",
+    "description": "Test loading demo data with one click",
+    "steps": [
+      "Click on 'Use Demo Data' button",
+      "Verify demo data is loaded",
+      "Verify user is taken to column mapping step"
+    ]
+  },
+  {
+    "id": "TC-005",
+    "title": "File Validation - Invalid Format",
+    "description": "Verify system shows error for invalid file formats",
+    "steps": [
+      "Click on File A upload area",
+      "Select a file with invalid format (e.g., .txt)",
+      "Verify error message is displayed"
+    ]
+  },
+  {
+    "id": "TC-006",
+    "title": "Automatic Column Detection",
+    "description": "Verify system automatically detects and suggests column mappings",
+    "steps": [
+      "Upload files or use demo data",
+      "Navigate to column mapping step",
+      "Verify system suggests mappings for docNo, party, date, amount, tax"
+    ]
+  },
+  {
+    "id": "TC-007",
+    "title": "Manual Column Mapping",
+    "description": "Verify user can manually adjust column mappings",
+    "steps": [
+      "Navigate to column mapping step",
+      "Change a column mapping using dropdown",
+      "Verify mapping is updated"
+    ]
+  },
+  {
+    "id": "TC-008",
+    "title": "Proceed to Reconciliation",
+    "description": "Verify user can proceed to reconciliation after mapping columns",
+    "steps": [
+      "Complete column mapping for both files",
+      "Click 'Next' or 'Run Reconciliation' button",
+      "Verify reconciliation process starts"
+    ]
+  },
+  {
+    "id": "TC-009",
+    "title": "View Dashboard Summary",
+    "description": "Verify dashboard displays summary statistics",
+    "steps": [
+      "Complete reconciliation",
+      "View dashboard section",
+      "Verify summary cards are displayed with total records, matched count, partial count, unmatched counts, and amount variance"
+    ]
+  },
+  {
+    "id": "TC-010",
+    "title": "View Results Table",
+    "description": "Verify results table displays reconciliation results",
+    "steps": [
+      "Complete reconciliation",
+      "Scroll to results table",
+      "Verify table displays all reconciliation results"
+    ]
+  },
+  {
+    "id": "TC-011",
+    "title": "Color Coding - Matched Records",
+    "description": "Verify matched records are displayed in green",
+    "steps": [
+      "Complete reconciliation with matched records",
+      "View results table",
+      "Verify matched records have green background"
+    ]
+  },
+  {
+    "id": "TC-012",
+    "title": "Color Coding - Partial Matches",
+    "description": "Verify partial matches are displayed in yellow",
+    "steps": [
+      "Complete reconciliation with partial matches",
+      "View results table",
+      "Verify partial matches have yellow background"
+    ]
+  },
+  {
+    "id": "TC-013",
+    "title": "Color Coding - Unmatched Records",
+    "description": "Verify unmatched records are displayed in red",
+    "steps": [
+      "Complete reconciliation with unmatched records",
+      "View results table",
+      "Verify unmatched records have red background"
+    ]
+  },
+  {
+    "id": "TC-014",
+    "title": "Filter by Match Type",
+    "description": "Verify user can filter results by match type",
+    "steps": [
+      "Complete reconciliation",
+      "Click on 'Matched' filter button",
+      "Verify only matched records are displayed"
+    ]
+  },
+  {
+    "id": "TC-015",
+    "title": "Search by Document Number",
+    "description": "Verify user can search results by document number",
+    "steps": [
+      "Complete reconciliation",
+      "Enter a document number in search field",
+      "Verify filtered results are displayed"
+    ]
+  },
+  {
+    "id": "TC-016",
+    "title": "Filter by Party Name",
+    "description": "Verify user can filter results by party name",
+    "steps": [
+      "Complete reconciliation",
+      "Enter a party name in party filter",
+      "Verify filtered results are displayed"
+    ]
+  },
+  {
+    "id": "TC-017",
+    "title": "Configure Amount Tolerance",
+    "description": "Verify user can adjust amount tolerance",
+    "steps": [
+      "Navigate to settings panel",
+      "Adjust amount tolerance slider",
+      "Click 'Apply Settings' or re-run reconciliation",
+      "Verify reconciliation runs with new tolerance"
+    ]
+  },
+  {
+    "id": "TC-018",
+    "title": "Configure Date Tolerance",
+    "description": "Verify user can adjust date tolerance",
+    "steps": [
+      "Navigate to settings panel",
+      "Adjust date tolerance slider",
+      "Click 'Apply Settings' or re-run reconciliation",
+      "Verify reconciliation runs with new tolerance"
+    ]
+  },
+  {
+    "id": "TC-019",
+    "title": "Export Results to CSV",
+    "description": "Verify user can export all results to CSV",
+    "steps": [
+      "Complete reconciliation",
+      "Click 'Export' button",
+      "Verify CSV file is downloaded"
+    ]
+  },
+  {
+    "id": "TC-020",
+    "title": "Export Filtered Results",
+    "description": "Verify user can export filtered results to CSV",
+    "steps": [
+      "Complete reconciliation",
+      "Apply a filter (e.g., show only matched records)",
+      "Click 'Export' button",
+      "Verify CSV file contains only filtered results"
+    ]
+  },
+  {
+    "id": "TC-021",
+    "title": "View Insights Panel",
+    "description": "Verify insights panel displays recommendations",
+    "steps": [
+      "Complete reconciliation",
+      "Scroll to insights panel",
+      "Verify insights are displayed"
+    ]
+  },
+  {
+    "id": "TC-022",
+    "title": "Step Indicator Display",
+    "description": "Verify step indicator shows current step",
+    "steps": [
+      "Navigate through the application",
+      "Verify step indicator highlights current step"
+    ]
+  },
+  {
+    "id": "TC-023",
+    "title": "Reset/Start Over",
+    "description": "Verify user can reset and start over",
+    "steps": [
+      "Complete reconciliation",
+      "Click 'Start Over' button",
+      "Confirm reset",
+      "Verify application returns to upload step"
+    ]
+  }
+]
